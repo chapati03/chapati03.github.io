@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title> For lily </title>
+    <link rel="icon" href="icon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="styles/mystyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/mystyles.css">
+   
+
+</head>
+
+<body>
+
+    <h3><center>Will you be my Valentine? <3 </center></h3>
+    <br>
+
+    <div class="center">
+        <img src="valentine.jpeg" alt="Valentine's Day" style="width: 50%; height: auto;">
+    </div>
+    <br>
+
+    <div class="flex flex-wrap flex-col bg-opacity-0 backdrop-blur-none md:flex-row gap-4 items-center justify-center">
+        <button class="button-primary" id="yesButton" onclick="changePage()">Yes<3</button>
+        <button class="button-secondary" id="dynamicButton">No:(</button>
+    </div>
+    <img id="hide" src="tadaa.png">
+    <script>
+        function changePage() {
+          window.location.href = 'yipie.html';
+        }
+    </script>
+
+    <script src="script1.js"></script>
+    <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    let typedText = ''; 
+
+    document.addEventListener('keypress', function(event) {
+        const inputChar = (event.key || String.fromCharCode(event.keyCode)).toLowerCase();
+        typedText += inputChar;     
+
+        if (typedText.includes('lily')) {
+            
+            alert('Can I be yours?');
+            typedText = ''; 
+        }
+    });
+});
+        </script>
+
+</body>
+</html>

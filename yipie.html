@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title> For Lily </title>
+    <link rel="icon" href="icon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="styles/mystyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/mystyles.css">
+   
+  
+</head>
+
+<body>
+    <br>
+    <h3><center></center></h3>
+    <br>
+    <div class="center">
+        
+        <img src="family-guy-stewie.gif" alt="Valentine's Day" style="width: 30%; height: auto;">
+    </div>
+    <h3><center>Hihi I won Mwah <3 </center></h3>
+    <br>
+    <img id="hide" src="tadaa.png">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+         let typedText = ''; 
+     
+         document.addEventListener('keypress', function(event) {
+             const inputChar = (event.key || String.fromCharCode(event.keyCode)).toLowerCase();
+             typedText += inputChar;     
+     
+             if (typedText.includes('lily')) {
+                 
+                 alert('Can I be yours?');
+                 typedText = ''; 
+             }
+         });
+     });
+             </script>
+</body>
+
+</html>
